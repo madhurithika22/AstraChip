@@ -1,0 +1,38 @@
+{
+  "routing_congestion": 0.78,
+  "thermal_hotspots": [
+    {
+      "x": 80,
+      "y": 90,
+      "temperature": 110.5,
+      "module": "ALU"
+    },
+    {
+      "x": 60,
+      "y": 70,
+      "temperature": 101.1,
+      "module": "MemoryController"
+    },
+    {
+      "x": 75,
+      "y": 80,
+      "temperature": 105.2,
+      "module": "Cache"
+    }
+  ],
+  "power_density": 0.7,
+  "warnings": [
+    "Routing congestion risk is high (0.78).",
+    "Detected 3 thermal hotspot(s)."
+  ],
+  "suggestions": [
+    "Spread tightly connected macros across die quadrants.",
+    "Move high-power macros away from North-East region."
+  ],
+  "verilog": {
+    "module_count": 1,
+    "modules": [
+      "alu"
+    ]
+  }
+}

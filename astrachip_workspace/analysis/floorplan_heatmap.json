@@ -1,0 +1,131 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": 0,
+        "name": "ALU",
+        "x": 80,
+        "y": 90,
+        "power": 0.92,
+        "density": 0.9444444444444444,
+        "material": "Copper"
+      },
+      {
+        "id": 1,
+        "name": "RegisterFile",
+        "x": 30,
+        "y": 50,
+        "power": 0.62,
+        "density": 0.4444444444444444,
+        "material": "Gold"
+      },
+      {
+        "id": 2,
+        "name": "MemoryController",
+        "x": 60,
+        "y": 70,
+        "power": 0.84,
+        "density": 0.7222222222222222,
+        "material": "Tungsten"
+      },
+      {
+        "id": 3,
+        "name": "Cache",
+        "x": 75,
+        "y": 80,
+        "power": 0.84,
+        "density": 0.8611111111111112,
+        "material": "Silicon"
+      },
+      {
+        "id": 4,
+        "name": "BusInterface",
+        "x": 20,
+        "y": 20,
+        "power": 0.45,
+        "density": 0.2222222222222222,
+        "material": "Copper"
+      }
+    ],
+    "edges": [
+      {
+        "src": 0,
+        "dst": 1,
+        "distance": 64.03124237432849
+      },
+      {
+        "src": 0,
+        "dst": 2,
+        "distance": 28.284271247461902
+      },
+      {
+        "src": 0,
+        "dst": 3,
+        "distance": 11.180339887498949
+      },
+      {
+        "src": 1,
+        "dst": 2,
+        "distance": 36.05551275463989
+      },
+      {
+        "src": 1,
+        "dst": 3,
+        "distance": 54.08326913195984
+      },
+      {
+        "src": 1,
+        "dst": 4,
+        "distance": 31.622776601683793
+      },
+      {
+        "src": 2,
+        "dst": 3,
+        "distance": 18.027756377319946
+      },
+      {
+        "src": 2,
+        "dst": 4,
+        "distance": 64.03124237432849
+      }
+    ]
+  },
+  "prediction": {
+    "routing_congestion": 0.78,
+    "thermal_hotspots": [
+      {
+        "x": 80,
+        "y": 90,
+        "temperature": 110.5,
+        "module": "ALU"
+      },
+      {
+        "x": 60,
+        "y": 70,
+        "temperature": 101.1,
+        "module": "MemoryController"
+      },
+      {
+        "x": 75,
+        "y": 80,
+        "temperature": 105.2,
+        "module": "Cache"
+      }
+    ],
+    "power_density": 0.7,
+    "warnings": [
+      "Routing congestion risk is high (0.78).",
+      "Detected 3 thermal hotspot(s)."
+    ],
+    "suggestions": [
+      "Spread tightly connected macros across die quadrants.",
+      "Move high-power macros away from North-East region."
+    ],
+    "verilog": {
+      "module_count": 1,
+      "modules": [
+        "alu"
+      ]
+    }
+  }
+}

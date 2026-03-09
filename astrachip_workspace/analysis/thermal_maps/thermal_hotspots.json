@@ -1,0 +1,22 @@
+{
+  "thermal_hotspots": [
+    {
+      "x": 80,
+      "y": 90,
+      "temperature": 110.5,
+      "module": "ALU"
+    },
+    {
+      "x": 60,
+      "y": 70,
+      "temperature": 101.1,
+      "module": "MemoryController"
+    },
+    {
+      "x": 75,
+      "y": 80,
+      "temperature": 105.2,
+      "module": "Cache"
+    }
+  ]
+}
