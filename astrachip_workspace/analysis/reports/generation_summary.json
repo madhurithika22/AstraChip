@@ -1,0 +1,5 @@
+{
+  "prompt": "Design an 8-bit RISC-V ALU optimized for low power",
+  "module": "alu",
+  "status": "generated"
+}
